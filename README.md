@@ -1,15 +1,14 @@
-# ETERNA - UAE Energy Companion
+# ⚡ ETERNA - UAE Energy Intelligence
 
-A mobile app that helps UAE families predict electricity bills and save money through smart energy optimization.
+A beautiful, professional mobile app that helps UAE families predict electricity bills and optimize energy usage through AI-powered insights.
 
-## Features
-- 📊 Bill prediction with AI
-- 💡 Real-time energy monitoring
-- 🌱 One-tap savings mode
-- 📱 Mobile-first design
-- 🇦🇪 UAE-specific insights
+## 🚀 Features
+- **AI Bill Prediction** - Accurate DEWA bill forecasting
+- **One-Tap Savings** - Instant energy optimization
+- **UAE-Specific Insights** - Cultural pattern recognition
+- **Beautiful UI** - Professional design with UAE theme
 
-## Installation
+## 🛠️ Installation
 ```bash
 pip install -r requirements.txt
 python main.py
