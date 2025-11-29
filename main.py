@@ -1,7 +1,7 @@
 import flet as ft
 from screens.splash import SplashScreen
 
-def main(page: ft.Page):
+async def main(page: ft.Page):
     # Configure the page
     page.title = "ETERNA - UAE Energy Companion"
     page.theme_mode = ft.ThemeMode.LIGHT
