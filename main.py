@@ -2,24 +2,26 @@ import flet as ft
 from screens.splash import SplashScreen
 
 def main(page: ft.Page):
-    # Professional page setup
-    page.title = "ETERNA - UAE Energy Intelligence"
+    # Diagnostics-level professional setup
+    page.title = "ETERNA • UAE Energy Intelligence Platform"
     page.theme_mode = ft.ThemeMode.LIGHT
     page.theme = ft.Theme(
         color_scheme=ft.ColorScheme(
             primary="#0F4C81",
-            secondary="#22C55E", 
+            secondary="#22C55E",
+            tertiary="#F59E0B",
+            surface=ft.colors.WHITE,
             on_primary=ft.colors.WHITE,
-        )
+        ),
+        font_family="Inter"
     )
-    page.padding = 0
-    page.fonts = {
-        "Poppins": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-    }
-    page.theme = ft.Theme(font_family="Poppins")
     
-    # Start with splash screen
+    page.padding = 0
+    page.spacing = 0
+    
+    # Start with premium splash
     SplashScreen(page).show()
 
 if __name__ == "__main__":
     ft.app(target=main)
+    
