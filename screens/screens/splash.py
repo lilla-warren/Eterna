@@ -1,5 +1,5 @@
 import flet as ft
-import time
+import asyncio
 
 class SplashScreen:
     def __init__(self, page):
@@ -23,7 +23,11 @@ class SplashScreen:
         self.page.add(splash_content)
         self.page.update()
         
-        # Wait 2 seconds then go to onboarding
-        time.sleep(2)
-        from screens.onboarding import OnboardingScreen
-        OnboardingScreen(self.page).show()
+        # Use async timer instead of time.sleep
+        async def navigate_to_onboarding():
+            await asyncio.sleep(2)
+            from screens.onboarding import OnboardingScreen
+            OnboardingScreen(self.page).show()
+        
+        # Start the async task
+        asyncio.create_task(navigate_to_onboarding())
